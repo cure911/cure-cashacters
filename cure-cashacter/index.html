@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link href="script.js">
+      <link rel="stylesheet" href="style.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto&amp;display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/v4-shims.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+   </head>
+   <body>
+      <div class="background">
+         <div class="main-app-container">
+            <div class="main-container-back">
+               <div class="main-border" style="visibility: visible;">
+                  <div class="first-step steps">
+                     <div class="header">
+                        <div class="step-header">
+                           <p>CREATE CHARACTER STEP 1/3</p>
+                        </div>
+                        <div class="header-header">
+                           <p>SELECT <span style="color: rgb(186, 185, 255)">GENDER</span></p>
+                        </div>
+                     </div>
+                     <div class="male-photos">
+                        <button class="male-button">
+                           <img  class="male-image" src="img/male.png" style="width:110%; margin-left: 2vh; margin-right: auto; cursor: pointer; transition-duration: 0.2s; margin-top: auto; margin-bottom: 3vh;" >
+                        </button>
+                        <button class="female-button">
+                           <img class="female-image" src="img/female.png" style="width: 65%; margin-left: auto; margin-right: 4vh; cursor: pointer; transition-duration: 0.2s; margin-top: auto; margin-bottom: 3vh;">
+                        </button>
+                     </div>
+                     <div class="gender-text">
+                        <p class="gender-text-p" style="margin: auto; font-weight: bold; color: rgba(255, 255, 255, 0.938); letter-spacing: 0.5px; transition-duration: 0.2;"></p>
+                     </div>
+                     <div class="buttons" style="display: flex;">
+                        <div style="width: 50%; height: 100%; margin: auto; display: flex;">
+                           <button style="margin: auto;" class="first-step-next">
+                              <span class="next-step-first-span">NEXT STEP</span>
+                           </button>
+                           <button style="margin: auto;" class="first-step-cancel">
+                              <span>CANCEL</span>
+                           </button>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="two-step steps">
+                     <div class="header">
+                        <div class="step-header">
+                           <p>CREATE CHARACTER STEP 2/3</p>
+                        </div>
+                        <div class="header-header">
+                           <p>CITIZEN <span style="color: rgb(186, 185, 255)">INFORMATIONS</span></p>
+                        </div>
+                     </div>
+                     <div class="cititzen-photos" style="margin-top: 1vh;">
+                        <div class="citizen-bar">
+                           <span>GIVEN NAME</span><br>
+                           <i class="fas fa-id-card"></i>
+                           <input type="text" class="name-input">
+                           <div class="input-border"></div>
+                        </div>
+                        <div class="citizen-bar">
+                           <span>SURNAME</span><br>
+                           <i class="far fa-id-card"></i>
+                           <input type="text" class="sirname-input">
+                           <div class="input-border"></div>
+                        </div>
+                        <div class="citizen-bar">
+                           <span>BIRTHDAY</span><br>
+                           <i class="fas fa-birthday-cake"></i>
+                           <input type="date" min='1930-01-01' max='2022-01-01' class="birt-input">
+                           <div class="input-border"></div>
+                        </div>
+                        <div class="citizen-bar">
+                           <span>NATION</span><br>
+                           <i class="fas fa-globe-americas"></i>
+                           <input type="text" class="nation-input">
+                           <div class="input-border"></div>
+                        </div>
+                     </div>
+                     <div class="buttons" style="display: flex; position: relative; top: 4vh;">
+                        <div style="width: 50%; height: 100%; margin: auto; display: flex;">
+                           <button style="margin: auto;" class="two-step-next">
+                              <span>NEXT STEP</span>
+                           </button>
+                           <button style="margin: auto;" class="two-step-cancel">
+                              <span>PREVIOUS STEP</span>
+                           </button>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="third-step steps">
+                     <div class="steapeheader">
+                        <div class="photo-headerr">
+                           <p>CREATE CHARACTER STEP 3/3</p>
+                        </div>
+                        <div class="photo-header">
+                           <p>CHARACTER <span style="color: rgb(186, 185, 255)">PHOTO</span></p>
+                        </div>
+                        <div class="photo-headerr insturaction">
+                           <p>IF YOU DON'T HAVE YOUR CHARACTER PHOTO, YOU CAN PASS THIS STEP</p>
+                        </div>
+                     </div>
+                     <div class="cititzen-photos-thing" style="margin-top: 1vh;">
+                        <div class="citizen-bar-photo">
+                           <span>UPLOAD PHOTO LINK</span><br>
+                           <i class="fas fa-upload"></i>
+                           <input type="text">
+                           <div class="input-upload-border"></div>
+                        </div>
+                     </div>
+                     <div class="buttons" style="display: flex; position: relative; top: 4vh;">
+                        <div style="width: 50%; height: 100%; margin: auto; display: flex;">
+                           <button style="margin: auto;" class="two-step-next">
+                              <span>FINISH</span>
+                           </button>
+                           <button style="margin: auto;" class="third-step-cancel">
+                              <span>PREVIOUS STEP</span>
+                           </button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script src="script.js"></script>
+   </body>
+</html>

@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+	box-sizing: border-box;
+	user-select: none;
+	font-family: 'Inter', sans-serif;
+}
+
+button {
+	appearance: auto;
+	text-rendering: auto;
+	color: -internal-light-dark(black, white);
+	letter-spacing: normal;
+	word-spacing: normal;
+	line-height: normal;
+	text-transform: none;
+	text-indent: 0px;
+	text-shadow: none;
+	display: inline-block;
+	text-align: center;
+	align-items: flex-start;
+	cursor: default;
+	box-sizing: border-box;
+	background-color: -internal-light-dark(rgb(239, 239, 239), rgb(59, 59, 59));
+	margin: 0em;
+	padding: 1px 6px;
+	border-width: 2px;
+	border-style: outset;
+	border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+	border-image: initial;
+}
+
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	font-family: 'Inter', sans-serif;
+}
+
+.main-app-container {
+	height: 100vh;
+	max-height: 100vh;
+	min-height: 100vh;
+	width: 100vw;
+	max-width: 100vw;
+	min-width: 100vw;
+	margin: 0!important;
+	padding: 0!important;
+	border: 0!important;
+	outline: 0!important;
+	overflow: hidden;
+	position: relative;
+}
+
+.main-container-back {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	top: 0px;
+	left: 0px;
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	max-width: 100vw;
+	min-width: 100vw;
+	max-height: 100vh;
+	min-height: 100vh;
+	pointer-events: none;
+	border: 0px !important;
+	margin: 0px !important;
+	outline: 0px !important;
+	padding: 0px !important;
+	overflow: hidden !important;
+}
+
+.main-border {
+	width: 25%;
+	border: 3px solid rgb(186, 185, 255);
+	background-color: rgba(0, 0, 0, 0.700);
+	height: 55%;
+	z-index: 10;
+	overflow: hidden;
+	position: relative;
+	animation: 250ms ease-in 0s 1 normal none running fadeIn;
+	border-radius: 10px;
+	pointer-events: all;
+	backdrop-filter: blur(32px);
+}
+
+.header{
+	width: 100%;
+	height: 17%;
+}
+
+.steapeheader{
+	width: 100%;
+	height: 25%;
+}
+
+.step-header{
+	width: 100%;
+	height: 50%;
+	display: flex;
+}
+
+.step-header P{
+	font-size: 1.5vh;
+	color: white;
+	font-weight: 600;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+}
+
+.header-header{
+	width: 100%;
+	height: 50%;
+	display: flex;
+}
+
+.photo-headerr{
+	width: 100%;
+	height: 30%;
+	display: flex;
+}
+.photo-header{
+	width: 100%;
+	height: 30%;
+	display: flex;
+}
+
+.photo-headerr P{
+	font-size: 1.5vh;
+	color: white;
+	font-weight: 600;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+}
+
+.insturaction P{
+	font-size: 1vh;
+	color: white;
+	font-weight: 300;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	bottom: 2vh;
+	margin-top: auto;
+}
+
+.photo-header P{
+	font-size: 2.7vh;
+	color: white;
+	font-weight: 800;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: auto;
+}
+
+.header-header P{
+	font-size: 2.7vh;
+	color: white;
+	font-weight: 800;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: auto;
+}
+
+.male-photos{
+	width: 100%;
+	height: 70%;
+	display: flex;
+}
+
+.male-photos button{
+	width: 50%;
+	outline: none;
+	border: none;
+	background-color: transparent;
+	display: flex;
+}
+
+.gender-text{
+	width: 100%;
+	height: 4%;
+	display: flex;
+	position: relative;
+	bottom: 5%;
+	animation: genderText 0.5s;
+}
+
+.buttons{
+	width: 100%;
+	height: 10%;
+	position: relative;
+	bottom: 4%;
+}
+
+.steps{
+	width: 100%;
+	height: 100%;
+}
+.cititzen-photos{
+	width: 100%;
+	height: 50%;
+	position: relative;
+	top: 5%;
+}
+.cititzen-photos span{
+	color: white;
+}
+.input-border{
+	background-color: white;
+	width: 100%;
+	height: 2px;
+}
+.cititzen-photos input{
+	width: 22vh;
+	background-color: transparent;
+	outline: none;
+	border: none;
+	position: relative;
+	bottom: 0.3vh;
+	font-size: 1.4vh;
+	color: white;
+}
+.cititzen-photos i{
+	color: white;
+	font-size: 3vh;
+}
+.citizen-bar{
+	width: 100%;
+	height: 23%;
+	padding-left: 7vh;
+	padding-right: 7vh;
+}
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+.buttons button:hover{
+	border: 1px solid rgba(186, 185, 255, 0.5);
+	background-color: rgba(33, 33, 33, 0.514);
+}
+
+.buttons button:active{
+	border: 1px solid rgb(186, 185, 255);
+	background-color: rgb(33, 33, 33);
+}
+
+.male-image, .female-image{
+	filter: grayscale(100%);
+}
+
+.male-image:hover{
+	filter: grayscale(80%);
+}
+
+.female-image:hover{
+	filter: grayscale(80%);
+}
+
+.buttons button{
+	border-radius: 50px;
+	font-size: 1.2vh;
+	font-weight: 500;
+	background-color: transparent;
+	outline: none;
+	background-color: rgba(33, 33, 33, 0.295);
+    color: rgb(186, 185, 255);
+	padding: 10px 15px;
+	border: 1px solid rgba(186, 185, 255, 0);
+	line-height: 1.75;
+	transition-duration: 0.7s;
+	cursor: pointer;
+}
+
+.buttons button span{
+	width: 100%;
+	display: inherit;
+	align-items: inherit;
+	justify-content: inherit;
+}	
+
+.first-step{
+	display: block;
+}
+
+.two-step{
+	display: none;
+}
+
+.third-step{
+	display: none;
+}
+
+.cititzen-photos-thing{
+	width: 100%;
+	height: 50%;
+	position: relative;
+	top: 5%;
+	display: flex;
+}
+
+.cititzen-photos-thing span{
+	font-size: 1.5vh;
+	color: white;
+	font-weight: 500;
+}
+.citizen-bar-photo{
+	width: 100%;
+	height: 23%;
+	margin: auto;
+	margin-bottom: 14vh;
+	display: block;
+	padding-left: 7vh;
+	padding-right: 7vh;
+}
+
+.citizen-bar-photo i{
+	color: white;
+	font-size: 3vh;
+}
+
+.citizen-bar-photo input{
+	width: 22vh;
+	background-color: transparent;
+	outline: none;
+	border: none;
+	position: relative;
+	bottom: 0.3vh;
+	font-size: 1.4vh;
+	color: white;
+}
+
+.input-upload-border{
+	width: 100%;
+	height: 2px;
+	background-color: white;
+}
